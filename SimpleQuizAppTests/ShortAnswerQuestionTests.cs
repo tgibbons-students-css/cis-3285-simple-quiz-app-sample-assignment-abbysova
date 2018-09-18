@@ -29,15 +29,15 @@ namespace SimpleQuizApplication.Tests
         [TestMethod()]
         public void getQuestion_EmptyStringTest()
         {
-            // Arrange
+            
             String strQuestion = "";
             String strAnswer = "Answer 111";
             Question q = new ShortAnswerQuestion(strQuestion, strAnswer);
 
-            //Act
+            
             String strResult = q.getQuestion();
 
-            //Assert
+            
             Assert.AreEqual(strQuestion, strResult);
 
         }
